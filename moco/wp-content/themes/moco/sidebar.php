@@ -1,0 +1,2 @@
+<?php if ( is_active_sidebar( 'search' ) ) { ?> <ul class="sidebar_ul"> <?php dynamic_sidebar( 'search' ); ?> </ul> <?php } ?>
+<?php if ( is_active_sidebar( 'sidebar' ) ) { ?> <ul class="sidebar_ul"> <?php dynamic_sidebar( 'sidebar' ); ?> </ul> <?php } ?>

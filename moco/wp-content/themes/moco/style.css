@@ -1,0 +1,328 @@
+/*
+    Theme Name: Monroe County Bicentennial
+    Theme URI: 
+    Description: Monroe County Bicentennial
+    Version: 1.0.0
+    Author: Monroe County Bicentennial
+    Author URI: 
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* CSS Quotation Marks
+  Use single quotation marks for attribute selectors and property values. (http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules) */
+
+
+/* http://blog.fontspring.com/2011/02/the-new-bulletproof-font-face-syntax/ */
+
+@font-face {
+    font-family: 'bernard';
+    src: url('css/fonts/bernard-mt-condensed.eot?#iefix') format('embedded-opentype'), url('css/fonts/bernard-mt-condensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'news-gothic-std';
+}
+
+nav,
+.nav {
+    background: rgb(30, 35, 35);
+    padding: 4px;
+}
+
+a {
+    color: rgb(182, 73, 77);
+}
+
+a:focus,
+a:hover {
+    color: rgb(157, 47, 57);
+    text-decoration: none;
+}
+
+.nav-pills>li.current-menu-item > a,
+.nav-pills>li.current-menu-item > a:focus,
+.nav-pills>li.current-menu-item > a:hover {
+    background-color: #fed10a;
+    color:#fff;
+}
+
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    background: rgb(157, 192, 72);
+    color: white;
+}
+
+article {
+    padding: 8px;
+}
+
+body {
+    background: url('images/body-bg.png')
+}
+
+.main-moco,
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background: rgb(157, 192, 72);
+    background: rgba(157, 192, 72, 0.25);
+}
+
+.carousel {
+    background: url('images/carousel/bg.png')
+}
+
+.pull-left {
+    margin-right: 8px;
+}
+
+footer {
+    border-top: black solid 2px;
+    padding: 8px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #425150;
+    font-family: 'bernard';
+    margin-top: 8px
+}
+
+.lead {
+    margin: 8px
+}
+
+li,
+p {
+    font-family: "news-gothic-std", sans-serif
+}
+
+.main-moco {
+    padding: 0
+}
+
+nav {
+    display: inline-block;
+    padding: 0;
+}
+
+.nav-main-container {
+    margin: 0;
+    padding-left: 8px
+}
+
+#sponsorship td:first-of-type {
+    /* matches every element that is the first child...of its parent. (http://www.w3schools.com/cssref/sel_first-of-type.asp) */
+    font-weight: bold;
+}
+
+table ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#table-sponsors {
+    background-color: rgb(182, 73, 77);
+    background-color: rgba(182, 73, 77, 0.35);
+}
+
+#table-sponsors th {
+    background-color: rgb(238, 193, 65);
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto
+}
+
+/* --- Custom CSS --- */
+a {
+    outline: none;
+}
+.nav-inner {
+    width: 100%;
+    display: inline-block;
+    background: rgb(30, 35, 35) none repeat scroll 0 0;
+    border-top: ridge black thin;
+    border-bottom: ridge black thin;
+    padding: 8px 0;
+}
+.social_icons {
+    display: inline-block;
+}
+.social_icons > ul {
+    margin: 0;
+    padding: 4px;
+}
+.social_icons > ul > li{
+    list-style: none;
+    display: inline-block;
+}
+.social_icons > ul > li > a {
+    border-radius: 4px;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+.gallery_section ul {
+    padding: 0;
+    margin: 0px;
+}
+.gallery_section .col-md-4 {
+    padding: 0;
+}
+.page-template-tpl_gallery .gallery_section .gallery_img {
+    max-height: 244px;
+    overflow: hidden;
+}
+.gallery_img {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+}
+.content_hover, .img_hover {
+    background: rgba(182, 73, 77, 0.7) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.gallery_img:hover .content_hover { opacity:1;top:0;}
+.content_hover .inner_content, .img_hover .inner_content {
+    color: #fff;
+    display: table;
+    font-family: sourcesanspro-bold;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.gallery_section .gallery_content span {
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 60%;
+}
+.gallery_img a > img {
+    height: auto;
+    width: 100%;
+}
+.content_hover .inner_content .gallery_content, .img_hover .inner_content span {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.pagination {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.pagination .fa {
+    font-size: 22px;
+}
+.pagination > a {
+    border: 1px solid #B6494D;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+}
+#events-nav {
+    border-bottom: 5px solid #b6494d;
+    display: inline-block;
+    margin: 0;
+    padding: 30px 0 20px;
+    text-align: center;
+    width: 100%;
+}
+#events-nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 20px;
+    text-align: center;
+}
+#events-nav li a {
+    color: #b6494d;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    text-decoration: none;
+}
+#events-nav .tooltip.tooltipstered {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.event-block {
+    display: table;
+    padding: 30px 0;
+    width: 100%;
+    display: inline-block;
+}
+.event_con_left {
+    display: table-cell;
+    float: left;
+    text-align: right;
+    width: 49%;
+}
+.event_con_right {
+    display: table-cell;
+    float: right;
+    text-align: left;
+    width: 49%;
+}
+.event-block h2 {
+    color: #b6494d;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 0;
+    text-decoration: underline;
+    width: 100%;
+}
+.event-block img {
+    height: auto;
+    max-width: 60%;
+}
+.sec_divider {
+    text-align: center;
+    width: 100%;
+}
+@media only screen and (max-width: 767px){
+    .gallery_section {
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 639px){
+    #events-nav li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0px 10px 5px;
+        text-align: center;
+    }
+    #events-nav li a {
+        font-size: 14px;
+    }
+    .event_con_left {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+    .event_con_right {
+        display: block;
+        float: none;
+        margin: 20px auto 0px;
+        text-align: center;
+        width: 80%;
+    }
+}
